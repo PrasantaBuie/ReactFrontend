@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid nav_bg">
+      <div className="container-fluid nav_bg shadow-lg mb-1 bg-white rounded">
         <div className="row">
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg ">
               <div className="container-fluid">
-                <NavLink className="navbar-brand" to="/">BrainStock</NavLink>
+                <NavLink className="navbar-brand" to="/"><img src='https://image.shutterstock.com/image-vector/brain-care-head-260nw-729968764.jpg' style={{width:'5rem',height:'5rem'}} />BrainStock</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="navbar-toggler-icon"></span>
+                  <span className="navbar-toggler-icon"><i class="fa fa-align-justify" style={{fontSize:'20px'}}></i></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">

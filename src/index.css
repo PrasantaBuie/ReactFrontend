@@ -1,14 +1,20 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body,html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-size: 62.5%;
+  font-family: 'Playfair Display', serif;
 }
 .navbar{
   background-color: #fff !important;
 }
+.nav-link{
+  font-size: 1.7rem !important;
+}
+
 .navbar-brand{
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
   color:#c712b8 !important;
   font-weight: bold;
 }
@@ -18,7 +24,8 @@
 }
 .manu_active{
   font-weight: bold;
-  
+  color: #c712b8;
+  border-bottom: 2px solid green; 
 }
 .navbar a:hover{
   color: #3498db;
@@ -26,43 +33,43 @@
 /*homepage*/
 #header{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   margin-top: 70px;
 }
 #header h1{
   margin: 0 0 10px 0;
-  font-size: 37px;
+  font-size: 3rem;
   font-weight: 700;
   color: black;
 }
 #header .brand-name{
   color: #3498db;
 }
+.cardimg{
+  
+  height: 15rem !important;
+}
 #header h2{
   color: #484848;
-  font-size: 20px;
+  font-size: 2.5rem;
 }
-#header .btn-get-started{
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 7px 20px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #3498db;
-  border: 2px solid #3498db;
-  text-decoration: none;
+ .btn{
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 0.7rem 2rem !important;
+  border-radius: 50px !important;
+  transition: 0.5s !important;
+  color: #3498db !important;
+  border: 2px solid #3498db !important;
+  text-decoration: none !important;
 }
-#header .btn-get-started:hover{
-  background: #3498db;
-  color: white;
+ .btn:hover{
+  background: #3498db !important;
+  color: white !important;
 }
-#header img{
-  text-align: right;
 
-  
-}
 #header .animated{
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -81,4 +88,17 @@
   100%{
     transform: translateX(-10px);
   }
+}
+.contact_div,textarea{
+  font-size: 1.5rem !important;
+  
+}
+
+input{
+  padding: 10px !important;
+  font-family: sans-serif !important;
+  font-size:1.5rem !important;
+}
+input::placeholder{
+  font-size: 1.5rem;
 }

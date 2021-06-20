@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App.jsx';
+import App from './App.js';
 import { BrowserRouter } from 'react-router-dom'
+import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
 ReactDOM.render(
