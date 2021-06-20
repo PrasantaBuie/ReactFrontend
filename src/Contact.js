@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({duration:1500})
 const Contact = () => {
     const[data,setData]=useState({
         fullname:'',
@@ -35,7 +38,7 @@ const Contact = () => {
         <div className='my-5'>
             <h1 className='text-center'>Contact Us</h1>
         </div>
-        <div className='container shadow-lg p-5 mb-5 bg-white rounded   contact_div'>
+        <div className='container shadow-lg p-5 mb-5 bg-white rounded   contact_div' data-aos='fade-down'>
             <div className='row'>
                 <div className='col-md-6 col-10 mx-auto'>
 

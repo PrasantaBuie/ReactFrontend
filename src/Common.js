@@ -1,6 +1,9 @@
 import React from "react";
 import web from '../src/images/bg.svg'
 import { NavLink } from "react-router-dom";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init({duration:1500})
 const Common=(props) =>{
     return(
     <>
@@ -8,7 +11,7 @@ const Common=(props) =>{
     <div className="container-fluid nav_bg">
           <div className="row">
             <div className="col-10 mx-auto">
-              <div className="row">
+              <div className="row" data-aos="zoom-out">
               <div className="col-md-6 pt-5 pt-lg-0 mt-auto order-2 order-lg-1 d-flex justify-column-center flex-column">
                   <h1>{props.name} <br/><strong className="brand-name">Prasanta's logic</strong></h1>
                   <h2 className="my-3">We are the team of talented developer teaching and making websites</h2>
